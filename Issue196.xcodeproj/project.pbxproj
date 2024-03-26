@@ -8,17 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		AA2D506C2BB329C4006C8D7E /* Issue196App.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2D506B2BB329C4006C8D7E /* Issue196App.swift */; };
-		AA2D506E2BB329C4006C8D7E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2D506D2BB329C4006C8D7E /* ContentView.swift */; };
 		AA2D50702BB329C6006C8D7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA2D506F2BB329C6006C8D7E /* Assets.xcassets */; };
 		AA2D50732BB329C6006C8D7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA2D50722BB329C6006C8D7E /* Preview Assets.xcassets */; };
+		AA2D507A2BB32A16006C8D7E /* MarkupWKWebView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2D50792BB32A16006C8D7E /* MarkupWKWebView+Extensions.swift */; };
+		AA2D507E2BB32C15006C8D7E /* PhotoPickerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2D507D2BB32C15006C8D7E /* PhotoPickerDemo.swift */; };
+		AA2D50802BB32C78006C8D7E /* PhotoPickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2D507F2BB32C78006C8D7E /* PhotoPickerDelegate.swift */; };
+		AA2D50822BB32CAA006C8D7E /* PhotoPickerToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2D50812BB32CAA006C8D7E /* PhotoPickerToolbar.swift */; };
+		AA2D50842BB32D20006C8D7E /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2D50832BB32D20006C8D7E /* TextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AA2D50682BB329C4006C8D7E /* Issue196.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Issue196.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA2D506B2BB329C4006C8D7E /* Issue196App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue196App.swift; sourceTree = "<group>"; };
-		AA2D506D2BB329C4006C8D7E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AA2D506F2BB329C6006C8D7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA2D50722BB329C6006C8D7E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AA2D50792BB32A16006C8D7E /* MarkupWKWebView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MarkupWKWebView+Extensions.swift"; sourceTree = "<group>"; };
+		AA2D507C2BB32A84006C8D7E /* Issue196.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Issue196.entitlements; sourceTree = "<group>"; };
+		AA2D507D2BB32C15006C8D7E /* PhotoPickerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerDemo.swift; sourceTree = "<group>"; };
+		AA2D507F2BB32C78006C8D7E /* PhotoPickerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerDelegate.swift; sourceTree = "<group>"; };
+		AA2D50812BB32CAA006C8D7E /* PhotoPickerToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerToolbar.swift; sourceTree = "<group>"; };
+		AA2D50832BB32D20006C8D7E /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +60,13 @@
 		AA2D506A2BB329C4006C8D7E /* Issue196 */ = {
 			isa = PBXGroup;
 			children = (
+				AA2D507C2BB32A84006C8D7E /* Issue196.entitlements */,
 				AA2D506B2BB329C4006C8D7E /* Issue196App.swift */,
-				AA2D506D2BB329C4006C8D7E /* ContentView.swift */,
+				AA2D50792BB32A16006C8D7E /* MarkupWKWebView+Extensions.swift */,
+				AA2D507D2BB32C15006C8D7E /* PhotoPickerDemo.swift */,
+				AA2D507F2BB32C78006C8D7E /* PhotoPickerDelegate.swift */,
+				AA2D50812BB32CAA006C8D7E /* PhotoPickerToolbar.swift */,
+				AA2D50832BB32D20006C8D7E /* TextView.swift */,
 				AA2D506F2BB329C6006C8D7E /* Assets.xcassets */,
 				AA2D50712BB329C6006C8D7E /* Preview Content */,
 			);
@@ -111,6 +125,9 @@
 				Base,
 			);
 			mainGroup = AA2D505F2BB329C4006C8D7E;
+			packageReferences = (
+				AA2D507B2BB32A64006C8D7E /* XCRemoteSwiftPackageReference "MarkupEditor" */,
+			);
 			productRefGroup = AA2D50692BB329C4006C8D7E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +154,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA2D506E2BB329C4006C8D7E /* ContentView.swift in Sources */,
+				AA2D50802BB32C78006C8D7E /* PhotoPickerDelegate.swift in Sources */,
+				AA2D507E2BB32C15006C8D7E /* PhotoPickerDemo.swift in Sources */,
+				AA2D507A2BB32A16006C8D7E /* MarkupWKWebView+Extensions.swift in Sources */,
+				AA2D50842BB32D20006C8D7E /* TextView.swift in Sources */,
+				AA2D50822BB32CAA006C8D7E /* PhotoPickerToolbar.swift in Sources */,
 				AA2D506C2BB329C4006C8D7E /* Issue196App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +290,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Issue196/Issue196.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Issue196/Preview Content\"";
@@ -280,6 +302,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,9 +310,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.stevengharris.Issue196;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Debug;
 		};
@@ -298,6 +325,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Issue196/Issue196.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Issue196/Preview Content\"";
@@ -309,6 +337,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,9 +345,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.stevengharris.Issue196;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Release;
 		};
@@ -344,6 +377,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AA2D507B2BB32A64006C8D7E /* XCRemoteSwiftPackageReference "MarkupEditor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stevengharris/MarkupEditor.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = AA2D50602BB329C4006C8D7E /* Project object */;
 }
